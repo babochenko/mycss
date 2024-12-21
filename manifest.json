@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "MyTwitter",
+  "version": "1.0",
+  "description": "Cleans things up",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "css": ["./injection.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
