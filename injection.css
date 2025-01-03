@@ -22,3 +22,8 @@ main[role="main"] > :first-child {
   width: 100%;
 }
 
+/* grok */
+div:has(> a[href="/i/grok/history"]) {
+    padding-left: 116px;
+}
+
