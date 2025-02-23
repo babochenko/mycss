@@ -2,6 +2,11 @@ a[href="/i/premium_sign_up"],
 a[href*="/communities"],
 a[href="/i/verified-orgs-signup"],
 a[href="/i/communitynotes"],
+button[data-testid="reply"] > * > :nth-child(2),
+button[data-testid="retweet"] > * > :nth-child(2),
+button[data-testid="like"] > * > :nth-child(2),
+button[data-testid="bookmark"] > * > :nth-child(2),
+a[href$="/analytics"],
 div[data-testid="sidebarColumn"],
 div[data-testid="DMDrawer"]
 {
