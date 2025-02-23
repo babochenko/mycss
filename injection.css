@@ -1,8 +1,20 @@
+/* hide comments count */
+button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before {
+  content: "•";
+  color: #6F7377;
+  position: absolute;
+  left: 6px;
+  right: 0;
+  text-align: left;
+}
+button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty)) {
+  color: transparent;
+}
+
 a[href="/i/premium_sign_up"],
 a[href*="/communities"],
 a[href="/i/verified-orgs-signup"],
 a[href="/i/communitynotes"],
-button[data-testid="reply"] > * > :nth-child(2),
 button[data-testid="retweet"] > * > :nth-child(2),
 button[data-testid="like"] > * > :nth-child(2),
 button[data-testid="bookmark"] > * > :nth-child(2),
