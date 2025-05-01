@@ -1,17 +1,4 @@
-/* hide comments count */
-button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before {
-  content: "•";
-  color: #6F7377;
-  position: absolute;
-  left: 6px;
-  right: 0;
-  text-align: left;
-}
-button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty)) {
-  color: transparent;
-}
-
-/* hide likes count */
+button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before,
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::before {
   content: "•";
   color: #6F7377;
@@ -20,6 +7,8 @@ button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::
   right: 0;
   text-align: left;
 }
+
+button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty)),
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty)) {
   color: transparent;
 }
