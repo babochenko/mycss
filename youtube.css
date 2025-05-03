@@ -1,3 +1,8 @@
+/* hide likes count */
+button-view-model yt-animated-rolling-number {
+  display: none !important;
+}
+
 /* Hide homepage feed */
 ytd-browse[page-subtype="home"] #contents {
   display: none !important;
