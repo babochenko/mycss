@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "MyCss",
+  "name": "MyCSS",
   "version": "1.0",
   "description": "Unclutters websites with custom CSS injections",
   "content_scripts": [
