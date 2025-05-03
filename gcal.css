@@ -1,0 +1,11 @@
+div[class="QQYuzf"], /* left bar */
+header[role="banner"]
+{
+  display: none !important;
+}
+
+div[role="main"] {
+  height: 100%;
+  margin: 50px;
+}
+

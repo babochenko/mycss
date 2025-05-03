@@ -1,12 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "MyTwitter",
+  "name": "MyCss",
   "version": "1.0",
-  "description": "Cleans things up",
+  "description": "Unclutters websites with custom CSS injections",
   "content_scripts": [
     {
+      "matches": ["https://calendar.google.com/*"],
+      "css": ["./gcal.css"],
+      "run_at": "document_idle"
+    },
+    {
       "matches": ["https://x.com/*"],
-      "css": ["./injection.css"],
+      "css": ["./x.css"],
       "run_at": "document_idle"
     }
   ]
