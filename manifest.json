@@ -5,6 +5,11 @@
   "description": "Unclutters websites with custom CSS injections",
   "content_scripts": [
     {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["./youtube.css"],
+      "run_at": "document_idle"
+    },
+    {
       "matches": ["https://calendar.google.com/*"],
       "css": ["./gcal.css"],
       "run_at": "document_idle"

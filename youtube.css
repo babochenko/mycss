@@ -1,0 +1,35 @@
+/* Hide homepage feed */
+ytd-browse[page-subtype="home"] #contents {
+  display: none !important;
+}
+
+/* Hide Shorts from sidebar */
+a[title="Shorts"],
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+ytd-guide-entry-renderer[title="Shorts"],
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+/* Hide top filter chips on homepage and subscriptions */
+ytd-feed-filter-chip-bar-renderer,
+yt-chip-cloud-renderer {
+  display: none !important;
+}
+
+/* hide video suggestions */
+#secondary {
+  display: none !important;
+}
+
+#primary {
+  margin: 0 auto !important;
+  float: none !important;
+  display: block !important;
+}
+
+#below {
+  width: 80%;
+  margin: 0 auto;
+}
+
