@@ -9,6 +9,7 @@ ytd-browse[page-subtype="home"] #contents {
 }
 
 /* Hide Shorts from sidebar */
+#related,
 a[title="Shorts"],
 ytd-mini-guide-entry-renderer[aria-label="Shorts"],
 ytd-guide-entry-renderer[title="Shorts"],
