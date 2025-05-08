@@ -1,6 +1,10 @@
 const $ = (sel) => document.querySelector(sel);
 
 const onKey = (key, lambda) => {
+  onKeyOn(document, key, lambda);
+};
+
+const onKeyOn = (document, key, lambda) => {
   document.addEventListener("keydown", (e) => {
     if (e.key.toLowerCase() === key.toLowerCase() && !e.metaKey && !e.ctrlKey) {
       lambda();
@@ -8,7 +12,9 @@ const onKey = (key, lambda) => {
   });
 };
 
-const chatInput = () => $('#chatframe')?.contentWindow?.document
+const chat = () => $('#chatframe')?.contentWindow?.document;
+
+const chatInput = () => chat()
   ?.querySelector('yt-live-chat-text-input-field-renderer')
   ?.querySelector('#input')
 
@@ -17,6 +23,11 @@ const chatInputObserver = new MutationObserver(() => {
   if (input) {
     chatInputObserver.disconnect()
     input.focus();
+
+    onKeyOn(chat(), 'Escape', () => {
+      chatInput()?.blur();
+      window.focus();
+    });
   }
 });
 
@@ -29,7 +40,3 @@ onKey('c', () => {
   chatInputObserver.observe(document.body, { childList: true, subtree: true });
 });
 
-//onKey('Escape', () => {
-//  chatInput()?.blur();
-//});
-//
