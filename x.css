@@ -1,4 +1,7 @@
+article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before,
+
+article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::before {
   content: "•";
   color: #6F7377;
@@ -8,7 +11,10 @@ button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::
   text-align: left;
 }
 
+article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty)),
+
+article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty)) {
   color: transparent;
 }
