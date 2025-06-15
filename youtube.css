@@ -23,11 +23,6 @@ yt-chip-cloud-renderer {
   display: none !important;
 }
 
-/* hide video suggestions */
-#secondary {
-  display: none !important;
-}
-
 #primary {
   margin: 0 auto !important;
   float: none !important;
