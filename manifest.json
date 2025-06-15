@@ -11,6 +11,11 @@
       "run_at": "document_idle"
     },
     {
+      "matches": ["https://app.godelterminal.com/*"],
+      "js": ["./godel.js"],
+      "run_at": "document_idle"
+    },
+    {
       "matches": ["https://calendar.google.com/*"],
       "css": ["./gcal.css"],
       "run_at": "document_idle"
