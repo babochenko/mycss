@@ -43,7 +43,7 @@ onKey('c', () => {
 
 // hide video suggestions, if no playlist chapters
 const rightColObserver = new MutationObserver(() => {
-  const rightCol = $('#secondary');
+  const rightCol = $('#columns > #secondary');
 
   if (rightCol) {
     rightColObserver.disconnect()
