@@ -1,6 +1,8 @@
+/* replace reply count with "•" except on my tweets */
 article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before,
 
+/* replace like count with "•" except on my tweets */
 article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::before {
   content: "•";
@@ -11,14 +13,17 @@ button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty))::
   text-align: left;
 }
 
+/* hide reply count on other tweets */
 article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty)),
 
+/* hide like count on other tweets */
 article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="like"] > * > :nth-child(2) > span > span:has(:not(:empty)) {
   color: transparent;
 }
 
+/* hide all the shit I don't use */
 a[href="/i/premium_sign_up"],
 a[href*="/communities"],
 a[href="/i/verified-orgs-signup"],
@@ -33,21 +38,24 @@ div[data-testid="DMDrawer"]
   display: none;
 }
 
+/* adjust sidebar width, to center the tweets */
 header[role="banner"] {
   position: absolute;
   width: 116px;
 }
 
+/* center the tweets */
 div[data-testid="primaryColumn"] {
   height: 100%;
   margin: auto;
 }
 
+/* center the tweets */
 main[role="main"] > :first-child {
   width: 100%;
 }
 
-/* grok */
+/* center grok page */
 div:has(> a[href="/i/grok/history"]) {
     padding-left: 116px;
 }
