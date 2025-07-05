@@ -23,6 +23,11 @@ yt-chip-cloud-renderer {
   display: none !important;
 }
 
+/* Hide notifications */
+ytd-popup-container {
+  display: none !important;
+}
+
 #primary {
   margin: 0 auto !important;
   float: none !important;
