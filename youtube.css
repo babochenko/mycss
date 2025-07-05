@@ -1,29 +1,42 @@
-/* hide likes count */
-button-view-model yt-animated-rolling-number {
-  display: none !important;
+/* transparent video description until hover */
+#above-the-fold > *:not(#title) {
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
 }
 
-/* Hide homepage feed */
-ytd-browse[page-subtype="home"] #contents {
-  display: none !important;
+#above-the-fold > *:not(#title):hover {
+  opacity: 1;
 }
 
-/* Hide Shorts from sidebar */
+/* HIDE */
+
+/* top panel */
+#content #masthead-container,
+
+/*sub count*/
+#owner-sub-count,
+
+/* menu below a video */
+ytd-watch-metadata #menu,
+
+/* comments */
+ytd-comments,
+
+/* homepage feed */
+ytd-browse[page-subtype="home"] #contents,
+
+/* shorts sidebar */
 #related,
 a[title="Shorts"],
 ytd-mini-guide-entry-renderer[aria-label="Shorts"],
 ytd-guide-entry-renderer[title="Shorts"],
-ytd-rich-section-renderer {
-  display: none !important;
-}
+ytd-rich-section-renderer,
 
-/* Hide top filter chips on homepage and subscriptions */
+/* top filter chips on homepage and subscriptions */
 ytd-feed-filter-chip-bar-renderer,
-yt-chip-cloud-renderer {
-  display: none !important;
-}
+yt-chip-cloud-renderer,
 
-/* Hide notifications */
+/* notifications */
 ytd-popup-container {
   display: none !important;
 }
