@@ -8,6 +8,11 @@
   opacity: 1;
 }
 
+/* reclaim space taken by top panel */
+#page-manager.ytd-app {
+    margin: 0 !important;
+}
+
 /* HIDE */
 
 /* top panel */
