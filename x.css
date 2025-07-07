@@ -1,3 +1,8 @@
+/* all my homies hate borders */
+* {
+    border: none !important;
+}
+
 /* replace reply count with "•" except on my tweets */
 article:not(:has(div[data-testid="UserAvatar-Container-babochenko"]))
 button[data-testid="reply"] > * > :nth-child(2) > span > span:has(:not(:empty))::before,
